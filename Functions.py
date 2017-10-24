@@ -10,7 +10,10 @@ optimise = True
 list_primes = []
 
 
+########################################################################################################################
+# A function for working out if a number is prime
 def is_number_prime(the_number_to_check):
+    # assume the number is prime. if its got a remainder after being divided by something, then its not prime
     is_prime = True
     if optimise:
         # justin says this is faster
@@ -29,7 +32,7 @@ def is_number_prime(the_number_to_check):
 
 
 ########################################################################################################################
-# assume the number is prime. if its got a remainder after being divided by something, then its not prime
+# Main program starts here
 for number_to_check in range(2, 10000):
     the_number_is_prime = is_number_prime(number_to_check)
 
